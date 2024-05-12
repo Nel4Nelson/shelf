@@ -1,0 +1,118 @@
+@import url("../src/fonts/WEB/css/satoshi.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --text-body: 235, 6%, 44%;
+    --text-primary: 210, 3%, 16%;
+    --black-50: 0, 0%, 98%;
+    --black-100: 0, 0%, 96%;
+    --black-300: 0, 0%, 88%;
+    --black-500: 0, 0%, 74%;
+    --black-900: 0, 0%, 12%;
+    --secondary: 260, 100%, 51%;
+    --header-bg: 312, 100%, 99%;
+    --benefit-bg: 177, 100%, 88%;
+    --statistic-bg: 42, 100%, 97%;
+    --testimonial-bg: 2, 100%, 94%;
+    --testimonial-card-bg: 11, 100%, 96%;
+    --testimonial-card-border: 2, 74%, 87%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.testimonial-linear-bg {
+  background: linear-gradient(
+    153deg,
+    rgba(192, 188, 188, 0.12) 100%,
+    rgba(0, 0, 0, 0) 100%
+  )!important;
+}
+
+.color {
+  color: #696b77;
+  color: hsl(0, 0%, 12%);
+  color: hsl(260, 100%, 51%);
+  color: hsl(312, 100%, 99%);
+  color: hsl(210, 3%, 16%);
+  color: hsl(235, 6%, 44%);
+  color: hsl(0, 0%, 96%);
+  color: hsl(177, 100%, 88%);
+  color: hsl(0, 0%, 98%);
+  color: hsl(42, 100%, 97%);
+  color: hsl(2, 100%, 94%);
+  color: hsl(0, 0%, 74%);
+  color: hsl(11, 100%, 96%);
+  color: hsl(2, 74%, 87%);
+  color: hsl(0, 0%, 88%);
+}
